@@ -1,4 +1,11 @@
-#h1 paragraph{ 
-    font-style: normal; }
 h1 {
     color:#0099ff; }
+footer {
+    font-size:10pt
+    a:link {color:aqua}
+    a:hover {color:cornflowerblue}
+    a:focus {color:deeppink}
+    a:visited {color:cadetblue}
+    a:active {color:darkgrey}
+    a {text-decoration: none; font-size 10pt}
+}
