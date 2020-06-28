@@ -1,11 +1,33 @@
-h1 {
-    color:#0099ff; }
-footer {
-    font-size:10pt
-    a:link {color:aqua}
-    :hover {color:cornflowerblue}
-    :focus {color:deeppink}
-    :visited {color:cadetblue}
-    :active {color:darkgrey}
-    {text-decoration: none; font-size 10pt}
+img {
+    float: left;
 }
+h1 {
+    color:#0033ff;
+    font-family: sans-serif;
+    font-size: 30pt
+}
+h3 {
+    font-family:sans-serif;
+    color:#0099ff;
+}
+h4 {
+    font-family:sans-serif
+}
+body p{
+    font-family: sans-serif
+}
+.past {
+    color:darkgray
+}
+.current {
+    color:dodgerblue
+}
+footer {
+    font-size: 9pt;
+}
+    :link {color:cornflowerblue}
+    footer a:hover {color:green}
+    footer a:focus {color:deeppink}
+    footer a:visited {color:cadetblue}
+    footer a:active {color:darkgrey}
+    a {text-decoration: none; font-size: 10pt}
