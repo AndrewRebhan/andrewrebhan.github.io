@@ -1,6 +1,6 @@
 img {
     float: left;
-    clear: right;
+    clear: left;
 }
 h1 {
     color:#0033ff;
@@ -13,6 +13,8 @@ h3 {
 }
 h4 {
     font-family:sans-serif
+}
+ul {margin-left: 12em
 }
 body p{
     font-family: sans-serif
