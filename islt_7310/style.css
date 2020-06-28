@@ -1,5 +1,6 @@
 img {
     float: left;
+    clear: right;
 }
 h1 {
     color:#0033ff;
