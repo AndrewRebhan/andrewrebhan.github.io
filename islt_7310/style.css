@@ -3,9 +3,9 @@ h1 {
 footer {
     font-size:10pt
     a:link {color:aqua}
-    a:hover {color:cornflowerblue}
-    a:focus {color:deeppink}
-    a:visited {color:cadetblue}
-    a:active {color:darkgrey}
-    a {text-decoration: none; font-size 10pt}
+    :hover {color:cornflowerblue}
+    :focus {color:deeppink}
+    :visited {color:cadetblue}
+    :active {color:darkgrey}
+    {text-decoration: none; font-size 10pt}
 }
