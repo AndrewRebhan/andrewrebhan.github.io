@@ -7,14 +7,14 @@ img {
 h1 {
     color:#0033ff;
     font-family: sans-serif;
-    font-size: 30pt;
-    background-color: aqua;
-    border: 2px solid blue;
+    font-size: 24pt;
+    background-color:#f1f1f1;
+    border: 2px solid #0033ff;
     padding: 10px;
     margin: 20px;
-    width:80%;
-    
-    
+    text-align: center;
+}
+h2 {
 }
 h3 {
     font-family:sans-serif;
@@ -24,13 +24,19 @@ h4 {
     font-family:sans-serif;
     font-size: 14px;
 }
+h5 {
+    font-family: sans-serif;
+    font-size:20px;
+    text-align: center
+}
 ul {margin-left: 12em;
 }
 body p{
     font-family: sans-serif;
 }
 body {
-    background-color:azure;
+    background-color:#f1f1f1;
+    margin:15px
 }
 .past {
     color:darkgray;
@@ -41,10 +47,11 @@ body {
 footer {
     font-size: 9pt;
     border-top: 2px solid black;
+    padding-top: 5px;
 }
     :link {color:cornflowerblue}
     footer a:hover {color:green}
     footer a:focus {color:deeppink}
     footer a:visited {color:cadetblue}
     footer a:active {color:darkgrey}
-    a {text-decoration: none; font-size: 10pt}
+    footer a {text-decoration: none; font-size: 10pt}
