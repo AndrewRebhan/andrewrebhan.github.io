@@ -1,12 +1,33 @@
 #nav_list ul li {
-display: inline-block;  /*this value called in-line block which allows us to create a box with an item that is in line with other elements */
-border: 3px dotted magenta;
+/*{display: inline-block;
+border: 3px solid navy;
 width: 150px;
 list-style-type: none;
 padding: 15px 15px 15px 25px;
-margin-top: 0;  /*This keeps the navigation bar on the top of the screen by saying we want 0 distance from the top of the browser */
-margin-left: 10px;
+margin-top: 0;
+    margin-left: 10px;}*/
+text-align: center;
+font-family: sans-serif
 }
-* {
-    border: 2px solid red;
+#nav_list ul{
+    display: inline-block;
+    list-style: none;
+    margin: 2px  0 0;
+    width: 100%;
+}
+#nav_list li a {
+    font-size: 1.3em;
+	color: black;
+	float: left;
+	text-decoration:none;
+    border: 2px solid black;
+	margin: 0 10px 0 0;
+	padding: 10px 5px 10px 5px;
+}
+#nav_list a:hover{
+	color: white;
+    background-color: black;
+}
+nav {
+
 }
