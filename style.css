@@ -65,6 +65,9 @@ body {
 .current {
     color:dodgerblue;
 }
+blockquote {
+    padding-left:20px;
+}
 footer {
     font-size: 9pt;
     border-top: 2px solid black;
