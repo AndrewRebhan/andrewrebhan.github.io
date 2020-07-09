@@ -1,3 +1,7 @@
+* {
+    font-family: sans-serif;
+}
+
 img {
     float: left;
     clear: left;
@@ -6,7 +10,6 @@ img {
 }
 h1 {
     color:#0033ff;
-    font-family: sans-serif;
     font-size: 24pt;
     background-color:#f1f1f1;
     border: 2px solid #0033ff;
@@ -17,31 +20,44 @@ h1 {
     text-align: center;
 }
 h2 {
-    font-family:sans-serif;
+    padding:10px;
 }
 h3 {
-    font-family:sans-serif;
     color:#0099ff;
+    padding:10px;
 }
 h4 {
-    font-family:sans-serif;
     font-size: 20px;
-    margin-left: 5em
+    margin-left: 5em;
+    padding:10px;
 }
 h5 {
-    font-family: sans-serif;
     font-size:20px;
-    text-align: center
+    text-align: center;
+    padding: 20px
 }
-ul {margin-left: 12em;
-    font-family: sans-serif;
+h5 a {
+    text-decoration:none;
 }
-body p{
-    font-family: sans-serif;
+h5 a:hover {
+    text-decoration: underline;
+}
+.education {margin-left: 12em;
+}
+.first::first-letter {
+    font-size: 200%;
+    font-family: serif;
+}
+p {
+    padding:8px;
+    margin-left:7px;
+    margin-right: 7px;
+}
+.indent::first-line {
+    text-indent: 18px;
 }
 body {
     background-color:#f1f1f1;
-    margin:15px
 }
 .past {
     color:darkgray;
@@ -49,12 +65,15 @@ body {
 .current {
     color:dodgerblue;
 }
+blockquote {
+    padding-left:20px;
+}
 footer {
     font-size: 9pt;
     border-top: 2px solid black;
     padding-top: 5px;
 }
-    :link {color:cornflowerblue}
+footer:link {color:cornflowerblue}
     footer a:hover {color:green}
     footer a:focus {color:deeppink}
     footer a:visited {color:cadetblue}
