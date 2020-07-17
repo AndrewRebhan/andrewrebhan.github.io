@@ -3,15 +3,15 @@
 <head>
 <!--
 *****************************************************************************
-Title:  Resume
+Title:  Contact Page
 
-Use:  For potential employers to download my resume.
+Use:  For potential employers to reach me!
 
 Author:  Andrew Rebhan
 
 School/Term:  University of Missouri-Columbia, Summer 2020
 
-Developed: June 22, 2020
+Developed: July 5, 2020
 
 Tested:  July 17, 2020; Passed on Firefox and Chrome browsers.
 
@@ -46,26 +46,27 @@ Tested:  July 17, 2020; Passed on Firefox and Chrome browsers.
     <span></span>
   </label>
 </header>
-   <div class="buffer">
-</div>
 
-    <h1>Andrew Rebhan</h1>
-<nav>
-    <ul>
-        <li><a href="../islt_7310/index.html">Home</a></li>
-        <li><a href="../islt_7310/resume.html">Resume</a></li>
-        <li><a href="#">Experience &#9660;</a>
-            <ul>
-                <li><a href="#">Goal 1</a></li>
-                <li><a href="#">Goal 2</a></li>
-                <li><a href="#">Goal 3</a></li>
-            </ul>
-        <li><a href="../islt_7310/accomplishments.html">Accomplishments</a></li>
-        <li><a href="../islt_7310/reflection.html">Reflection</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
-    <h5><a href="../islt_7310/docs/RebhanResume.pdf">Resume</a></h5>
-   <footer>Copyright 2020 - Andrew Rebhan (<a href="mailto:amrmtf@umsystem.edu">amrmtf@umsystem.edu</a>)</footer>
+    <div class="buffer"></div>
+<h2 class="contact">Contact Me</h2>
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email...">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
 </body>
 </html>
