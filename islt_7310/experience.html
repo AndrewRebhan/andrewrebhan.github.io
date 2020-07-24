@@ -3,57 +3,137 @@
 <head>
 <!--
 *****************************************************************************
-Title:  Experience
 
-Use:  For potential employers to download my resume.
+Title:  Home Page
+
+Use:  For employers or others who would like to learn more about me.
 
 Author:  Andrew Rebhan
 
 School/Term:  University of Missouri-Columbia, Summer 2020
 
-Developed: July 5, 2020
+Developed: June 22, 2020
 
 Tested:  July 17, 2020; Passed on Firefox and Chrome browsers.
 
 ******************************************************************************
 -->
 <link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="nav.css">
+<link rel="stylesheet" type="text/css" href="navtry.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <title>Andrew Rebhan's Accomplishments</title>
+    <title>Andrew Rebhan</title>
 </head>
-<body>
-    <h1>Andrew Rebhan</h1>
-<nav id="nav_list">
-    <ul>
-        <li><a href=../islt_7310/index.html>Home</a></li>
-        <li><a href=../islt_7310/resume.html>Resume</a></li>
-        <li><a href=../islt_7310/accomplishments.html>Accomplishments</a></li>
-        <li><a href=../islt_7310/experience.html>Experience</a></li>
-    </ul>
-    </nav>
-    <h2>Experience</h2>
-    <h4>Mehlville School District (Teacher)</h4>
+<body class="content">
+<header>
+<nav></nav>
+</header>
+<main>
+<div class="experiencecontainer">
+  <div class="item header">
+    <nav>
+       <h1 class="logo">AR</h1>
+       <ul>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="../reflection.html">Reflection</a></li>
+        <li><a href="../experience.html">Experience &#9660;</a>
+            <ul>
+                <li><a href="#teacher">Teaching</a></li>
+                <li><a href="#substitute">Substitute</a></li>
+                <li><a href="#volunteer">Volunteer</a></li>
+            </ul>
+        <li><a href="../resume.html">Resume</a></li>
+        <li><a href="../index.html">Home</a></li>
+    </ul></nav></div>
+  <div class="item content-1"> Experience
+  </div>
+  <div class="item work1"><a name="teacher"></a>
+      <h4 class="h4exp">Mehlville School District (Teacher)</h4>
     <ul>
         <li>Taught English Language Arts content to 7th grade students</li>
         <li>Made use of technology to facilitate project-based learning in various forms such as podcasts, videos, shared documents, screenplays, and more</li>
         <li>Assumed leadership positions through the PBIS committee, creating a digital student behavior/intervention tracker, and presenting teaching methods to peers</li>
     </ul>
-<p>Teaching English Language Arts consists of a 90-minute block per class. 45 minutes are for reading instruction, and another 45 for writing instruction. I used spreadsheets to track reading and writing and help my students set goals for themselves. I am proud to say that my students have read over 100,000 pages this last year and collectively wrote nearly half a million words in one month while participating in National Novel Writing Month</p>
-    <h4>Mehlville School District (Substitute Teaching)</h4>
+<p class ="pexp">Teaching English Language Arts consists of a 90-minute block per class. 45 minutes are for reading instruction, and another 45 for writing instruction. I used spreadsheets to track reading and writing and help my students set goals for themselves. I am proud to say that my students have read over 100,000 pages this last year and collectively wrote nearly half a million words in one month while participating in National Novel Writing Month</p>
+</div>
+  <div class="item work2"><a name="substitute"></a>
+  <h4 class="h4exp">Mehlville School District (Substitute Teaching)</h4>
     <ul>
         <li>Instructed students age 5-18 through substitute teaching</li>
-        <li>Built relationships with students from various schools and classroom climates</li>
+        <li>Built relationships with students from various schools, age groups, classroom climates, and socioeconomic backgrounds</li>
         <li>Frequently requested by teachers to return to their classrooms</li>
     </ul>
-<p>Substitute teaching helped me hone my classroom management skills across a wide range of age groups. Being a substitute teacher before being a full-time teacher also helped me sample a variety of lesson styles before being tasked with creating them for myself.</p>
-     <h4>St. Trinity Summer School (Volunteer Teacher)</h4>
+<p class ="pexp">Substitute teaching helped me hone my classroom management skills across a wide range of age groups. Being a substitute teacher before being a full-time teacher also helped me sample a variety of lesson styles before being tasked with creating them for myself.</p>
+  </div>
+  <div class="item work3"><a name="volunteer"></a>
+  <h4 class="h4exp">St. Trinity Summer School (Volunteer Teacher)</h4>
      <ul>
-         <li>Ran math instruction for two summers for elementary-aged students from low socio-economic backgrounds</li>
+         <li>Ran math instruction for two summers for students from low socio-economic backgrounds and every elementary age group</li>
          <li>Used data to track student growth in math skills of 30+ students</li>
      </ul>
- <p>My experience at St. Trinity’s summer school was such a good jumping off point into my teaching career. The students kept me on my toes, and I learned so much about behavior management and instructional design in a matter of weeks. It was here that I learned why Maslow’s Hierarchy of Needs is so important. I helped get each student fed and supported, and only then did I focus on instruction.</p>
-
-     <footer>Copyright 2020 - Andrew Rebhan (<a href="mailto:amrmtf@umsystem.edu">amrmtf@umsystem.edu</a>)</footer>
+ <p class ="pexp">My experience at St. Trinity’s summer school was such a good jumping off point into my teaching career. The students kept me on my toes, and I learned so much about behavior management and instructional design in a matter of weeks. It was here that I learned why Maslow’s Hierarchy of Needs is so important. I helped get each student fed and supported, and only then did I focus on instruction.</p>
+</div>
+      <div class="item footer">&copy; 2020 - Andrew Rebhan (<a href="mailto:amrmtf@umsystem.edu">amrmtf@umsystem.edu</a>)</div></div>
+</main>
 </body>
 </html>
+
+
+
+
+
+
+<!--
+<div class="parent">
+<div class="div1">
+   <h1 class="logo">Andrew Rebhan</h1>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+<nav>
+    <ul>
+        <li><a href="../islt_7310/index.html">Home</a></li>
+        <li><a href="../islt_7310/resume.html">Resume</a></li>
+       <li><a href="#">Experience &#9660;</a>
+            <!--<ul>
+                <li><a href="#">Goal 1</a></li>
+                <li><a href="#">Goal 2</a></li>
+                <li><a href="#">Goal 3</a></li>
+            </ul> 
+        <li><a href="../islt_7310/accomplishments.html">Accomplishments</a></li>
+        <li><a href="../islt_7310/reflection.html">Reflection</a></li>
+        <li><a href="../islt_7310/contact.html">Contact</a></li>
+    </ul></nav> </div>
+<div class="div2"> </div>
+<div class="div3"> </div>
+<div class="div4"> </div>
+<div class="div5"> </div>
+<div class="div6"> </div>
+<div class="div7"> </div>
+<div class="div8"> </div>
+<div class="div9"> </div>
+</div>
+
+<div class="grid">
+   <div class="navigation"></div>
+     <div class="me">
+   </div>
+   <div class ="header">Header</div>
+   <div class ="about">About</div> 
+   <div class ="education">Education</div>
+   <div class ="quote">Quote</div>
+   <div class ="footer">Footer</div>
+</div> 
+<div class="buffer">
+</div>
+<img src="../islt_7310/images/owenandi.jpg" alt="Me" width ="200" height="267">
+   <h3> I am a teacher of six years and a life-long learner. Welcome to my website.</h3>
+   <br>
+   <h4>Education</h4>
+   <ul class=education> 
+       <li class=past>Bachelor of Science in Middle School Language Arts Education from the University of Missouri-Columbia</li>
+       <li class=current>Currently enrolled in the Learning Technologies and Design Master’s Program at the University of Missouri-Columbia</li>
+   </ul>
+    <p>I am proud to be an English Language Arts and Publications teacher in the Mehlville School District located in Saint Louis, MO. When I’m not teaching 11-14-year-old students at Margaret Buerkle Middle School, I’m teaching my 1-year-old son and 3-year-old daughter how to share. In my fleeting free time I enjoy designing tabletop games for use in the classroom, photography, and editing videos/images.</p>
+    <br>
+    <blockquote>“A love of learning has a lot to do with learning that we’re loved” – Fred Rogers</blockquote>
+    <br>
+    <footer>Copyright 2020 - Andrew Rebhan (<a href="mailto:amrmtf@umsystem.edu">amrmtf@umsystem.edu</a>)</footer>!-->

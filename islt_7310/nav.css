@@ -147,7 +147,8 @@ nav a:hover {
     background: none;
     top: initial;
     left: initial;
-    
+
+
     grid-column: 3 / 4;
     display: flex;
     justify-content: flex-end;
