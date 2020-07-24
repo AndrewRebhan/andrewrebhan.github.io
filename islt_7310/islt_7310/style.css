@@ -1,0 +1,298 @@
+.indexcontainer {
+  display: grid;
+  width: 80vw;
+  height: 1600px;
+  grid-template-columns: 250px 1fr 30px 250px 1fr;
+  grid-template-rows: 80px 450px .75fr 250px 150px 100px;
+  grid-gap: 1rem;
+  grid-template-areas:
+      "header header header header header"
+      "banner banner banner banner banner"
+      "about about about about about"
+      "content-1 content-2 . content-3 content-4"
+      "quote quote quote quote quote"
+      "footer footer footer footer footer";
+}
+h1 {
+    padding-left: 4em;
+}
+img {
+    max-width:100%;
+    display:block;
+    height:auto;
+}
+.header {
+  grid-area: header;
+    position: sticky;
+    top:0;
+}
+
+.banner {
+  grid-area: banner
+}
+
+.about {
+  grid-area: about;
+    flex-direction: column;
+}
+
+.aboutp {
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.content-1 {
+  grid-area: content-1;
+}
+
+.content-2 {
+  grid-area: content-2;
+}
+
+.content-3 {
+  grid-area: content-3;
+}
+
+.content-4 {
+    grid-area: content-4;
+}
+
+.quote {
+    grid-area: quote
+}
+
+.footer {
+  grid-area: footer;
+}
+.footer a {
+    text-decoration: none;
+}
+.footericon {
+    transform:scale(.5)
+}
+.footericon:hover {
+    transform:scale(1);
+        transition: transform ease-in-out 250ms;
+}
+
+
+/* RESUME PAGE */
+.resumecontainer {
+  display: grid;
+  width: 80vw;
+  height: 1600px;
+  grid-template-columns: 250px 1fr 30px 250px 1fr;
+  grid-template-rows: 80px 200px .45fr 100px;
+  grid-gap: 1rem;
+  grid-template-areas:
+      "header header header header header"
+      "content-1 content-1 . content-3 content-3"
+     "content-2 content-2 . content-4 content-4"
+      "footer footer footer footer footer";
+}
+.resumelink {
+    font-size: 5em;
+    text-decoration: none;
+    color: white
+}
+.resumelink a{
+    text-decoration: none;
+    
+}
+.resumeicon
+{
+    height:200px
+}
+
+
+
+
+/*EXPERIENCE PAGE */
+.experiencecontainer {
+  display: grid;
+  width: 80vw;
+  height: 1600px;
+  grid-template-columns: 250px 1fr 30px 250px 1fr;
+  grid-template-rows: 80px 80px .45fr .45fr .45fr 100px;
+  grid-gap: 1rem;
+  grid-template-areas:
+       "header header header header header"
+      "content-1 content-1 content-1 content-1 content-1"
+      "work1 work1 work1 work1 work1"
+     "work2 work2 work2 work2 work2"
+      "work3 work3 work3 work3 work3"
+      "footer footer footer footer footer";
+}
+.work1 {
+    grid-area: work1;
+    flex-direction: column;
+}
+.work1 ul {
+    padding-right: 8em;
+    padding-left: 5em;
+}
+.work2 {
+    grid-area: work2;
+    flex-direction: column;
+}
+.work2 ul {
+    padding-right: 25em;
+    padding-left: 5em;
+}
+.work3 {
+    grid-area: work3;
+    flex-direction: column;
+}
+.work3 ul {
+    padding-right: 25em;
+    padding-left: 5em;
+}
+.h4exp {
+    font-size:2em;
+}
+.pexp {
+    padding-left: 1em;
+    padding-right: 1em;
+    
+}
+
+
+
+
+/*REFLECTION PAGE*/
+.reflectioncontainer {
+  display: grid;
+  width: 80vw;
+  height: 1600px;
+  grid-template-columns: 250px 1fr 30px 250px 1fr;
+  grid-template-rows: 80px 80px .25fr .25fr  100px;
+  grid-gap: 1rem;
+  grid-template-areas:
+       "header header header header header"
+      "content-1 content-1 content-1 content-1 content-1"
+      "work1 work1 work1 work1 work1"
+"work1 work1 work1 work1 work1"
+      "footer footer footer footer footer";
+}
+.first::first-letter {
+    font-size: 200%;
+    font-family: serif;
+}
+.first {
+    padding:8px;
+    margin-left:7px;
+    margin-right: 7px;
+}
+.indent {
+    padding:8px;
+    margin-left:7px;
+    margin-right: 7px;
+}
+.indent::first-line {
+    text-indent: 18px;
+}
+
+/*CONTACT PAGE */
+.contactcontainer {
+  display: grid;
+  width: 80vw;
+  height: 1600px;
+  grid-template-columns: 250px 1fr 30px 250px 1fr;
+  grid-template-rows: 80px 80px .20fr .20fr  100px;
+  grid-gap: 1rem;
+  grid-template-areas:
+       "header header header header header"
+      "content-1 content-1 content-1 content-1 content-1"
+      "work1 work1 work1 work1 work1"
+"work1 work1 work1 work1 work1"
+      "footer footer footer footer footer";
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/* OTHER STYLES */
+
+body {
+  background-color: #f0f5f3;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.item {
+  background-color: #1EAAFC;
+  background-image: linear-gradient(130deg, #6C52D9 0%, #1EAAFC 85%, #3EDFD7 100%);
+ background-image: linear-gradient(130deg, #f0f0f0 0%, #bdbdbd 85%, #cccbc4 100%);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  color: #000000;
+  border-radius: 4px;
+  border: 0px solid #171717;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.about {
+    justify-content:space-around;
+    align-items:center;
+}
+h2 {
+   
+}
+.header {
+  background-color: #1EAAFC;
+  background-image: linear-gradient(160deg, #f5e845 0%, #d4c844 127%);
+}
+
+.sidebar {
+  background-image: linear-gradient(203deg, #3EDFD7 0%, #29A49D 90%)
+}
+
+.content-1,
+.content-3 {
+  background-image: linear-gradient(130deg, #f5e845 0%, #d4c844 85%, #d4cd7b 100%);
+}
+.quote {
+    background-image: url(/images/trolleyblur.png);
+        background-size: cover;
+    color:white;
+}
+
+.footer {
+     /*background-image: linear-gradient(160deg, #f5e845 0%, #d4c844 127%);*/
+    background-image: url(images/footerimage.png)
+}
+
+/* MOBILE SUPPORT */

@@ -1,0 +1,68 @@
+.nav {
+    border-bottom: 1px solid #EAEAEB;
+    text-align: right;
+    height:70px;
+    line-height: 70px;
+}
+.menu {
+    margin: 0 20 0 0;
+}
+.menu-static-top {
+    top:-70px;
+}
+.menu-static-top, .navbar-fixed-bottom {
+    position: static;
+}
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: gray;
+    margin 0 20px;
+    line-height: 70px;
+}
+label {
+    margin:0 40px 00;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width:26px;
+    float: right;
+}
+#toggle {
+    display:none;
+}
+@media only screen and (max-width:566px){
+    label {
+        display:block;
+        cursor:pointer;
+    }
+    .menu {
+        text-align: center;
+        width:100%;
+        display:none;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin:0;
+        background-color: gainsboro;
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+}
+
+
+
+<!-- from styl.css
+h1 {
+    color:#0033ff;
+    font-size: 24pt;
+    background-color:#f1f1f1;
+    border: 2px solid #0033ff;
+    padding: 10px;
+    margin: 20px;
+    margin-left:40px;
+    margin-right:40px;
+    text-align: center;
+!-->
