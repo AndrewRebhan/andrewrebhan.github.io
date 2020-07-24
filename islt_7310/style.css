@@ -285,7 +285,7 @@ h2 {
   background-image: linear-gradient(130deg, #f5e845 0%, #d4c844 85%, #d4cd7b 100%);
 }
 .quote {
-    background-image: url(/images/trolleyblur.png);
+    background-image: url("images/trolleyblur.png");
         background-size: cover;
     color:white;
 }
