@@ -74,7 +74,9 @@ img {
     transform:scale(1);
         transition: transform ease-in-out 250ms;
 }
-
+.embedvid {
+    grid-area:embedvid;
+}
 
 /* RESUME PAGE */
 .resumecontainer {
@@ -87,7 +89,7 @@ img {
   grid-template-areas:
       "header header header header header"
       "content-1 content-1 . content-3 content-3"
-     "content-2 content-2 . content-4 content-4"
+     "content-2 content-2 . embedvid embedvid"
       "footer footer footer footer footer";
 }
 .resumelink {
@@ -104,6 +106,21 @@ img {
     height:200px
 }
 
+.embedvid {
+    position:relative;
+    padding-bottom:56.25%;
+    overflow:hidden;
+    
+}
+.embedvid iframe,
+.embedvid object,
+.embedvid embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
 
 
 
@@ -136,7 +153,7 @@ img {
     flex-direction: column;
 }
 .work2 ul {
-    padding-right: 25em;
+      padding-right: 8em;
     padding-left: 5em;
 }
 .work3 {
@@ -144,7 +161,7 @@ img {
     flex-direction: column;
 }
 .work3 ul {
-    padding-right: 25em;
+      padding-right: 8em;
     padding-left: 5em;
 }
 .h4exp {
@@ -155,8 +172,6 @@ img {
     padding-right: 1em;
     
 }
-
-
 
 
 /*REFLECTION PAGE*/
@@ -178,10 +193,14 @@ img {
     font-size: 200%;
     font-family: serif;
 }
+/*fix this in post*/
 .first {
     padding:8px;
+    padding-right:25em;
     margin-left:7px;
     margin-right: 7px;
+    width: inherit;
+    text-align: left;
 }
 .indent {
     padding:8px;
@@ -251,8 +270,6 @@ body {
 }
 
 .item {
-  background-color: #1EAAFC;
-  background-image: linear-gradient(130deg, #6C52D9 0%, #1EAAFC 85%, #3EDFD7 100%);
  background-image: linear-gradient(130deg, #f0f0f0 0%, #bdbdbd 85%, #cccbc4 100%);
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   color: #000000;
@@ -296,3 +313,32 @@ h2 {
 }
 
 /* MOBILE SUPPORT */
+@media screen and (min-width:100px) and (max-width:900px) {
+
+.item {
+      font-size: calc(.5em + 1vw);
+}
+body {
+  background-color: #f0f5f3;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+    /* EXPERIENCE PAGE */
+    .experiencecontainer {
+  display: grid;
+  width: 80vw;
+  height: 1600px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 80px .45fr .45fr .45fr 100px;
+  grid-gap: 1rem;
+  grid-template-areas:
+       "header header header header header"
+      "content-1 content-1 content-1 content-1 content-1"
+      "work1 work1 work1 work1 work1"
+     "work2 work2 work2 work2 work2"
+      "work3 work3 work3 work3 work3"
+      "footer footer footer footer footer";
+}
+}
