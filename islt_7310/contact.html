@@ -23,7 +23,7 @@ Tested:  July 24, 2020; Passed on Firefox and Chrome browsers.
 <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <title>Andrew Rebhan</title>
+    <title>Rebhan Contact</title>
 </head>
 <body class="content">
 <header>
@@ -33,7 +33,7 @@ Tested:  July 24, 2020; Passed on Firefox and Chrome browsers.
 <div class="contactcontainer">
   <div class="item header">
     <nav>
-       <h1 class="logo">AR</h1>
+       <h1 class="logo">Andrew Rebhan</h1>
       <ul>
         <li><a href="../islt_7310/contact.html">Contact</a></li>
         <li><a href="../islt_7310/reflection.html">Reflection</a></li>
@@ -45,12 +45,28 @@ Tested:  July 24, 2020; Passed on Firefox and Chrome browsers.
             </ul>
         <li><a href="../islt_7310/resume.html">Resume</a></li>
         <li><a href="../islt_7310/index.html">Home</a></li>
-    </ul></nav></div>
+    </ul></nav><div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+           <li><a href="../islt_7310/index.html">Home</a></li>
+           <li><a href="../islt_7310/resume.html">Resume</a></li>
+           <li><a href="../islt_7310/experience.html">Experience</a></li>
+            <li><a href="../islt_7310/reflection.html">Reflection</a></li>
+            <li><a href="../islt_7310/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div></div>
   <div class="item content-1"> Contact Me
   </div>
   <div class="item work1">
       <div class="container">
-  <form action="action_page.php">
+  <form action="mailto:amrmtf@umsystem.edu?Subject=Professional%20Website%20Contact" method="post" enctype="text/plain">
 
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -61,8 +77,8 @@ Tested:  July 24, 2020; Passed on Firefox and Chrome browsers.
     <label for="email">Email</label>
     <input type="text" id="email" name="email" placeholder="Your email...">
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <label for="text">Text</label>
+    <textarea id="text" name="text" placeholder="Write something.." style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
 
